@@ -9,11 +9,13 @@ class App extends React.Component {
         <h1>Game Of Thrones: Answers</h1>
         <ul> 
           <Character 
-          query='16'/>
+          query='16'
+          titles1=''/>
           <Character 
-          query='901'/>
+          query='901'
+          born1=''/>
           <Character 
-          query='232'/>
+          query='229'/>
         </ul>
 
         
