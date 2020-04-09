@@ -9,9 +9,9 @@ class Character extends React.Component{
     }
     async componentDidMount(){
         const urlChar= `https://anapioficeandfire.com/api/characters/${this.props.query}`;
-        const urlHouse= `https://anapioficeandfire.com/api/house/${this.props.query}`;
 
-        let response = await axios.get(urlChar,urlHouse);
+        
+        let response = await axios.get(urlChar);
         let data= response.data;
         console.log(data);
         this.setState({ans1: data.name,born1: data.born, aliases1: data.aliases[1]})
