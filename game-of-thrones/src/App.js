@@ -6,8 +6,17 @@ class App extends React.Component {
   render(){
     return (
       <div>
-        <h1>Game Of Thrones:</h1>
-        <Character />
+        <h1>Game Of Thrones: Answers</h1>
+        <ul> 
+          <Character 
+          query='16'/>
+          <Character 
+          query='901'/>
+          <Character 
+          query='232'/>
+        </ul>
+
+        
       </div>
     )
   }
